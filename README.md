@@ -5,13 +5,11 @@
 
 ## What's the fuzz all about?
 
-If you read this you might have experienced on a rainy day out driving that your front left window wiper all of a sudden just wipes half of your windshield and the right window wiper seems dead. You drive to your local mechanic and get told they will have to replace both window wipers. It will cost you quite a bit more than you are comforable paying for to fix something seemingly simple as a defective window wiper motor (£2000 or similar). You might get the idea to find a used wiper motor from a scrapped car which is when you will get the next shock. The price for a dirty old used window wiper motor for this specific car model is more than the price of a new wiper motor for any other car. The reason for this is that it's a highly common problem that these fail on the Peugeot 508 and used parts are short in supply. It's simply a design flaw by Peugeot and boils down to the lack of protection above the wiper motor which make the motor openly exposed to **rain** (go figure). Especially the left wiper motor which seems to **almost always** be the culprit.
+If you read this you might have experienced on a rainy day out driving that your front left window wiper all of a sudden just wipes half of your windshield and the right window wiper seems dead. You drive to your local mechanic and get told they will have to replace both window wipers. It will cost you quite a bit more than you are comforable paying for to fix something seemingly simple as a defective window wiper motor (£2000 or similar). You might get the idea to find a used wiper motor from a scrapped car which is when you will get the next shock. The price for a dirty old used window wiper motor for this specific car model is more than the price of a new wiper motor for any other car. The reason for this is that it's a highly common problem that these fail on the Peugeot 508 and used parts are short in supply. It's simply a design flaw by Peugeot and boils down to the lack of protection above the wiper motor which make the motor openly exposed to **rain** (go figure). Especially the left wiper motor which seems to **almost always** be the culprit. A side effect of this can also be other errors showing up like airbag and passenger seat detection, this is because the indicator lamps for these functions are connected to the same communication line (LIN bus) as the wipers, and when this line is shorted that will be the result. But don't worry, these errors will also disappear once the wiper motor is fixed.
 
 Over time the aluminum block part of the Bosch WDA motor corrodes and pushes the plastic cover away from the aluminum block, breaching the rubber gasket between the two parts and water gets into the motor, quickly corroding elecronics when they are powered. Also, from my experience, it seems the rubber seal around the axle of the motor itself dries/rots over time and water will also find its way through there.
 
 The reason for why your local dealer/workshop says you need to replace both wiper motors is that the parts they sell are always a newer version (different MCU and firmware and the old version is discontinued). Since these two wiper motors need to communicate with each other and there are slight differences in the communication protocol, the old wiper motors are incompatible with the new versions. Hence both needs replacement to the new version, unless you fix it yourself.
-
-Below is a list of relevant components on the 1 397 220 613 / 1 397 220 614 Bosch WDA motor PCB that are critical for its function and that is most likely to be damaged when water leaks into the motor assembly. Components on the LIN Bus lines are most likely to suffer first due to how the motor is mounted to the car chassis (slightly tilted, making all the water collect in one place once water leaks to the inside).
 
 If you buy a dirty old second hand wiper motor, it's likely that it has already started to corrode and the problem might surface yet again in the near future. You may consider to open it up and clean the edges for corrosion and clean/refresh/replace the rubber gasket. The most difficult part of the disassembly is to get the plastic cover separated from the motor housing, do not use force and be really careful when removing the electrical motor brush assembly, this is connected to the circuit board and you will break the wires connecting the brush assembly to the circuit board if you're not careful enough. 
 
@@ -167,7 +165,7 @@ If you buy a dirty old second hand wiper motor, it's likely that it has already 
 	![](assets/Peugeot_508_Skoda_side-by-side.jpg)
 	![](assets/Peugeot_508_Skoda_side-by-side2.jpg)
 
-- This is a simple schematic I sketched up for the LIN bus protection circuit, which is the first thing that usually shorts and causes errors on everything else connected to the same bus like the airbag lamps and passenger seat detection lamps shown in the middle mirror unit. This is also why you will see airbaig failure warnings amongst other things when turning on the ignition when you have a water damaged window wiper motor.
+- This is a simple schematic I sketched up for the LIN bus protection circuit, which is the first thing that usually shorts and causes errors on everything else connected to the same bus like the airbag lamps and passenger seat detection lamps shown in the middle mirror unit. This is also why you will see airbag failure warnings amongst other things when turning on the ignition when you have a water damaged window wiper motor.
 
 	![](assets/datasheet_lin.png)
 
@@ -181,6 +179,8 @@ If you buy a dirty old second hand wiper motor, it's likely that it has already 
 </div>
 
 ## Component identification
+
+Below is a list of relevant components on the 1 397 220 613 / 1 397 220 614 Bosch WDA motor PCB that are critical for its function and that is most likely to be damaged when water leaks into the motor assembly. Components on the LIN Bus lines are most likely to suffer first due to how the motor is mounted to the car chassis (slightly tilted, making all the water collect in one place once water leaks to the inside).
 
 First listed are two ICs, pins on the main MCU (D0865FD) is suspectible to some corrosion damage if the leakage has been severe. Alternatives to the components are listed under each component.
 
