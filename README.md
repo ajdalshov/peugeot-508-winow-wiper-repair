@@ -187,25 +187,25 @@ First listed are two ICs, pins on the main MCU (D0865FD) is suspectible to some 
 D0865FD - BOSCH microcontroller for WDA motion control, LIN Bus communication (pin 5, 40, 41, 42, 44 are LIN Bus related) `[TQFP44]`
 - no datasheet available to the public
 - these have custom firmware and can't just be replaced with a new chip, if replacement is needed it needs to be from a donor board of the same type motor (wipe angles and if it's a single or dual master/slave setup are all parts of firmware configuration)
-- Peugeot 508 2014-2018 (Type I, Fase 2) uses wiper motors with part number 1 397 220 694 / 1 397 220 695, MCU on these are the [Infinion TLE9868QXB20](https://www.infineon.com/cms/de/product/microcontroller/embedded-power-ics-system-on-chip-/h-bridge-driver-integrated-arm-cortex-m3/tle9868qxb20/) `[VQFN-48-79]` [link to datasheet here](https://www.infineon.com/dgdl/Infineon-TLE9868QXB20-DataSheet-v02_00-EN.pdf?fileId=8ac78c8c81ae03fc0181d82d65f43c05), which is why Peugeot will replace both wiper motors on older cars (<2014) even if just one fails, possibly differences in LIN Bus communication between them (not to be considered as a chip replacement alternative, PCB is completely different and different chip package)
+- Peugeot 508 2014-2018 (Type I, Fase 2) uses wiper motors with part number 1 397 220 694 / 1 397 220 695, MCU on these are the [Infinion TLE9868QXB20](https://www.infineon.com/cms/de/product/microcontroller/embedded-power-ics-system-on-chip-/h-bridge-driver-integrated-arm-cortex-m3/tle9868qxb20/) `[VQFN-48-79]` [link to datasheet here](assets/datasheets/Infineon-TLE9868QXB20-DataSheet-v02_00-EN.pdf), which is why Peugeot will replace both wiper motors on older cars (<2014) even if just one fails, possibly differences in LIN Bus communication between them (not to be considered as a chip replacement alternative, PCB is completely different and different chip package)
 
-[KMZ43T](https://www.nxp.com/docs/en/data-sheet/KMZ43T.pdf) - NXP, Magnetic field sensor
-
-> [!NOTE]
-> Possible alternative: [AA747](https://www.sensitec.com/fileadmin/sensitec/Service_and_Support/Downloads/Data_Sheets/AA700/SENSITEC_AA747_DSE_08.pdf) - Sensitec, MagnetoResistive Angle Sensor
-
-QN0406 - [IPD80N04S3-06](https://www.infineon.com/dgdl/Infineon-IPD80N04S3_06-DS-v01_00-en.pdf?folderId=db3a304412b407950112b42b75b74520&fileId=db3a304412b407950112b42ba80c45bb&ack=t) 40V N-Channel Enhancement mode MOSFET `[automotive]`
+[KMZ43T](assets/datasheets/KMZ43T.pdf) - NXP, Magnetic field sensor
 
 > [!NOTE]
-> Possible alternative: [DMTH4005SK3Q-13](https://www.diodes.com/assets/Datasheets/DMTH4005SK3Q.pdf) `[automotive]`
+> Possible alternative: [AA747](assets/datasheets/SENSITEC_AA747_DSE_08.pdf) - Sensitec, MagnetoResistive Angle Sensor
 
-27E - Dual Line CAN Bus Protector [NUP2105LT1](https://www.onsemi.com/pdf/datasheet/nup2105l-d.pdf)
+QN0406 - [IPD80N04S3-06](assets/datasheets/Infineon-IPD80N04S3_06-DS-v01_00-en.pdf) 40V N-Channel Enhancement mode MOSFET `[automotive]`
+
+> [!NOTE]
+> Possible alternative: [DMTH4005SK3Q-13](assets/datasheets/DMTH4005SK3Q.pdf) `[automotive]`
+
+27E - Dual Line CAN Bus Protector [NUP2105LT1](assets/datasheets/nup2105l-d.pdf)
 
 > [!NOTE]
 > Possible alternative is one with marking 6X that I've seen used on another board at the same spot where 27E should be (on a right side motor).
 
 > [!TIP]
-> Other CAN/LIN Bus ESD protectors may also work, like [PESD2IVN24T-Q](https://assets.nexperia.com/documents/data-sheet/PESD2IVN24T-Q.pdf) (LIN bus specifically mentioned in datasheet)
+> Other CAN/LIN Bus ESD protectors may also work, like [PESD2IVN24T-Q](assets/datasheets/PESD2IVN24T-Q.pdf) (LIN bus specifically mentioned in datasheet)
 
 No datasheets are available for the Wxx components listed below, but they are identified and alternatives are listed under. I suspect they are made by Philips/Nexperia and W prefix = made in China, but they might be "rare" markings from around 2008-2012ish and only available for the automotive industry (just a guess since it's impossible to find documentation on them).
 
@@ -213,30 +213,30 @@ WZR - High-speed switching double diode (series) (100V, 125mA) `[SOT-23]`
 
 **Possible alternatives:**
 
-| Marking | Type + Link to datasheet                                                  | Grade      | Comment                                                                                                                                                                  |
-|---------|---------------------------------------------------------------------------|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| A7*     | [BAV99-Q](https://assets.nexperia.com/documents/data-sheet/BAV99-Q.pdf)   | automotive | used as replacement by the manufacturer for WZR on a [Volvo alarm PCB](https://elektronikforumet.com/forum/viewtopic.php?t=72490) (difference from an earlier/later PCB) |
-| *V1     | [BAS31](https://assets.nexperia.com/documents/data-sheet/BAS29_31_35.pdf) | automotive |                                                                                                                                                                          |
-| *5C     | [PMBD7000](https://assets.nexperia.com/documents/data-sheet/PMBD7000.pdf) | automotive |                                                                                                                                                                          |
-| KJE     | [BAV99-Q](https://www.diodes.com/assets/Datasheets/BAV99.pdf)             | automotive |                                                                                                                                                                          |
+| Marking | Type + Link to datasheet                   | Grade      | Comment                                                                                                                                                                  |
+|---------|--------------------------------------------|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| A7*     | [BAV99-Q](assets/datasheets/BAV99-Q.pdf)   | automotive | used as replacement by the manufacturer for WZR on a [Volvo alarm PCB](https://elektronikforumet.com/forum/viewtopic.php?t=72490) (difference from an earlier/later PCB) |
+| *V1     | [BAS31](assets/datasheets/BAS29_31_35.pdf) |            |                                                                                                                                                                          |
+| *5C     | [PMBD7000](assets/datasheets/PMBD7000.pdf) | automotive |                                                                                                                                                                          |
+| KJE     | [BAV99-Q](assets/datasheets/BAV99.pdf)     |            |                                                                                                                                                                          |
 
 WZE - High-voltage switching diode (single) (250V, 200mA) `[SOT-23]`
 
 **Possible alternatives:**
 
-| Marking | Type + Link to datasheet                                                      | Grade      | Comment                                                                                                      |
-|---------|-------------------------------------------------------------------------------|------------|--------------------------------------------------------------------------------------------------------------|
-| *HQ     | [BAS101](https://assets.nexperia.com/documents/data-sheet/BAS101_BAS101S.pdf) | automotive |                                                                                                              |
-| JS%     | [BAS21-Q](https://assets.nexperia.com/documents/data-sheet/BAS21-Q.pdf)       | automotive | this is used on a newer version of the board (Infinion MCU), has several JSt, also in close proximity to WYA |
+| Marking | Type + Link to datasheet                   | Grade      | Comment                                                                                                      |
+|---------|--------------------------------------------|------------|--------------------------------------------------------------------------------------------------------------|
+| %HQ     | [BAS101-Q](assets/datasheets/BAS101-Q.pdf) | automotive |                                                                                                              |
+| JS%     | [BAS21-Q](assets/datasheets/BAS21-Q.pdf)   | automotive | this is used on a newer version of the board (Infinion MCU), has several JSt, also in close proximity to WYA |
 
 WYA - NPN general-purpose transistor (45 V, 500 mA) `[SOT-23]`
 
 **Possible alternatives:**
 
-| Marking | Type + Link to datasheet                                                       | Grade      | Comment                                                                                                      |
-|---------|--------------------------------------------------------------------------------|------------|--------------------------------------------------------------------------------------------------------------|
-| 6C*     | [BC817-40-Q](https://assets.nexperia.com/documents/data-sheet/BC817-Q_SER.pdf) | automotive | 6Cs̱ (lowercase s with underline, Siemens?) is used as a replacement for WYA on another PCB of the same type |
-|         | [BC817-40](https://assets.nexperia.com/documents/data-sheet/BC817_SER.pdf)     | automotive |                                                                                                              |
+| Marking | Type + Link to datasheet                        | Grade      | Comment                                                                                                      |
+|---------|-------------------------------------------------|------------|--------------------------------------------------------------------------------------------------------------|
+| 6C*     | [BC817-40-Q](assets/datasheets/BC817-Q_SER.pdf) | automotive | 6Cs̱ (lowercase s with underline, Siemens?) is used as a replacement for WYA on another PCB of the same type  |
+|         | [BC817-40](assets/datasheets/BC817_SER.pdf)     |            |                                                                                                              |
 
 Below are some other components in same era that have similar markings, not used for the Bosch WDA but on other automotive related PCBs (this might be useful for someone as the Wxx components are almost impossible to find).
 
@@ -244,34 +244,34 @@ WZJ - Dual Schottky diode (common cathode) `[SOT-23]`
 
 **Possible alternative:**
 
-| Marking | Type + Link to datasheet                                                      | Grade      |
-|---------|-------------------------------------------------------------------------------|------------|
-| 45%     | [BAS40-05-Q](https://assets.nexperia.com/documents/data-sheet/BAS40-05-Q.pdf) | automotive |
+| Marking | Type + Link to datasheet                       | Grade      |
+|---------|------------------------------------------------|------------|
+| 45%     | [BAS40-05-Q](assets/datasheets/BAS40-05-Q.pdf) | automotive |
 
 WZP - High-speed switching double diode (common cathode) `[SOT-23]`
 
 **Possible alternative:**
 
-| Marking | Type + Link to datasheet                                                | Grade      |
-|---------|-------------------------------------------------------------------------|------------|
-| A4s     | [BAV70-Q](https://assets.nexperia.com/documents/data-sheet/BAV70-Q.pdf) | automotive |
+| Marking | Type + Link to datasheet                 | Grade      |
+|---------|------------------------------------------|------------|
+| A4s     | [BAV70-Q](assets/datasheets/BAV70-Q.pdf) | automotive |
 
 WYB - NPN general-purpose transistor (65V, 100 mA) `[SOT-23]`
 
 **Possible alternative:**
 
-| Marking | Type + Link to datasheet                                                      | Grade      |
-|---------|-------------------------------------------------------------------------------|------------|
-| 1Bp     | [BC846B-Q](https://assets.nexperia.com/documents/data-sheet/BC846X-Q_SER.pdf) | automotive |
+| Marking | Type + Link to datasheet                       | Grade      |
+|---------|------------------------------------------------|------------|
+| 1Bp     | [BC846B-Q](assets/datasheets/BC846X-Q_SER.pdf) | automotive |
 
 **Possible alternative:**
 
 WYG - PNP general-purpose transistor (65V, 100 mA) `[SOT-23]`
 - 3Bp  `[automotive]`
 
-| Marking | Type + Link to datasheet                                                                 | Grade      |
-|---------|------------------------------------------------------------------------------------------|------------|
-| 3Bp     | [BC856B-Q](https://assets.nexperia.com/documents/data-sheet/BC856-Q_BC857-Q_BC858-Q.pdf) | automotive |
+| Marking | Type + Link to datasheet                                  | Grade      |
+|---------|-----------------------------------------------------------|------------|
+| 3Bp     | [BC856B-Q](assets/datasheets/BC856-Q_BC857-Q_BC858-Q.pdf) | automotive |
 
 
 ```
@@ -330,7 +330,7 @@ The wiper motor for Peugeot 508 comes in two versions, number on motor is found 
 
 ## Other motors of the same type
 
-The common product number is 1 397 220 xxx and there are MANY of these motors. Most of them are used in single motor systems with mechanichs linking the two wipers. These are calibrated with a completely different range of motion than what is used for dual motor systems. Dual motor systems work as a master/slave setup and need to be synchronized in order to prevent wiper overlap (wipers crashing in to each other). Older motor units with part number from about 1 397 220 5xx to 1 397 220 68x uses the BOSCH D0865FD MCU while newer motor units with part number from about 1 397 220 69x to 1 397 220 7xx uses the [Infinion TLE9868QXB20](https://www.infineon.com/cms/de/product/microcontroller/embedded-power-ics-system-on-chip-/h-bridge-driver-integrated-arm-cortex-m3/tle9868qxb20/) MCU ([datasheet](https://www.infineon.com/dgdl/Infineon-TLE9868QXB20-DataSheet-v02_00-EN.pdf?fileId=8ac78c8c81ae03fc0181d82d65f43c05)).
+The common product number is 1 397 220 xxx and there are MANY of these motors. Most of them are used in single motor systems with mechanichs linking the two wipers. These are calibrated with a completely different range of motion than what is used for dual motor systems. Dual motor systems work as a master/slave setup and need to be synchronized in order to prevent wiper overlap (wipers crashing in to each other). Older motor units with part number from about 1 397 220 5xx to 1 397 220 68x uses the BOSCH D0865FD MCU while newer motor units with part number from about 1 397 220 69x to 1 397 220 7xx uses the [Infinion TLE9868QXB20](https://www.infineon.com/cms/de/product/microcontroller/embedded-power-ics-system-on-chip-/h-bridge-driver-integrated-arm-cortex-m3/tle9868qxb20/) MCU ([datasheet](assets/datasheets/Infineon-TLE9868QXB20-DataSheet-v02_00-EN.pdf)).
 
 This list may be useful in case you need a new motor housing or brush assembly, these may work as replacements (but NOT the PCB and probably not the plastic housing as the connectors tend to differ).
 
@@ -392,11 +392,11 @@ One motor system with mechanics driving two wipers
 
 - LIN ID 0x32 (Tx) is used for internal WDA diagnostic purposes. Make sure that the LIN ID 0x32 is not used in your LIN network by any other device.
 
-[Datasheet](https://www.bosch-motorsport.com/content/downloads/Raceparts/Resources/pdf/Data%20Sheet_68715659_Wiper_Direct_Actuator_WDA.pdf)
+[Datasheet](assets/datasheets/Data_Sheet_68715659_Wiper_Direct_Actuator_WDA.pdf)
 
-[Calibration Sheet](https://www.bosch-motorsport.com/content/downloads/Raceparts/Resources/pdf/Calibration%20Sheet_68717323_Wiper_Direct_Actuator_WDA.pdf)
+[Calibration Sheet](assets/datasheets/Calibration_Sheet_68717323_Wiper_Direct_Actuator_WDA.pdf)
 
-[Offer Drawing WDA LIN](https://www.bosch-motorsport.com/content/downloads/Raceparts/Resources/pdf/Offer%20Drawing%20WDA%20LIN_304931467_Wiper_Direct_Actuator_WDA.pdf)
+[Offer Drawing WDA LIN](assets/datasheets/Offer_Drawing_WDA_LIN_304931467_Wiper_Direct_Actuator_WDA.pdf)
 
 [3D Data](https://www.bosch-motorsport.com/content/downloads/Raceparts/Resources/zip/3D%20Data_68718987.zip)
 
