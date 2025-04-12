@@ -218,7 +218,7 @@ WZR - High-speed switching double diode (series) (100V, 125mA) `[SOT-23]`
 | A7*     | [BAV99-Q](assets/datasheets/BAV99-Q.pdf)   | automotive | used as replacement by the manufacturer for WZR on a [Volvo alarm PCB](https://elektronikforumet.com/forum/viewtopic.php?t=72490) (difference from an earlier/later PCB) |
 | *V1     | [BAS31](assets/datasheets/BAS29_31_35.pdf) |            |                                                                                                                                                                          |
 | *5C     | [PMBD7000](assets/datasheets/PMBD7000.pdf) | automotive |                                                                                                                                                                          |
-| KJE     | [BAV99-Q](assets/datasheets/BAV99.pdf)     |            |                                                                                                                                                                          |
+| KJE     | [BAV99](assets/datasheets/BAV99.pdf)       |            |                                                                                                                                                                          |
 
 WZE - High-voltage switching diode (single) (250V, 200mA) `[SOT-23]`
 
@@ -307,8 +307,8 @@ Some of the Wxx SOT-23 components are identified using a simple component tester
 
 This is a selection of components that are most likely to be damaged and needed to fix your corroded PCB. Most parts here are of automotive grade which usually are a bit more expensive, but they at least fall within spec of the original design. I have used all these parts myself on some of the repairs shown above and every repair has been successful and 100% working.
 
-| #  | PRODUCT DETAILS                                                                                                                                                            |
-|----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| #  | PRODUCT DETAILS                                                                                                                                                             |
+|----|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1  | [SZNUP2105LT1GOSCT-ND](https://www.digikey.com/en/products/detail/onsemi/SZNUP2105LT1G/3063422) SZNUP2105LT1G TVS DIODE 24VWM 44VC SOT233                                   |
 | 2  | [31-BAS21Q-13-FCT-ND](https://www.digikey.com/en/products/detail/diodes-incorporated/BAS21Q-13-F/16548952) BAS21Q-13-F DIODE STANDARD 250V 200MA SOT233                     |
 | 3  | [1727-2919-1-ND](https://www.digikey.com/en/products/detail/nexperia-usa-inc/BC817-40-215/763235) BC817-40,215 TRANS NPN 45V 0.5A TO-236AB                                  |
@@ -342,12 +342,12 @@ This is a selection of components that are most likely to be damaged and needed 
 
 The wiper motor for Peugeot 508 comes in two versions, number on motor is found on the black plastic cover on the electrical motor itself, number on mechanism is found on a white label next to one of the mounting screws. You can replace the motor with another motor with the same part number without doing anything else (no "sync" or use of diagnostic software needed). You can **not** directly replace just one motor of the old type with a motor of the new type since they are incompatible, both motors must have the same HW/SW.
 
-| Number on motor | Number on mechanism | Side  | HW/SW           | Car model / year               |
-|-----------------|---------------------|-------|-----------------|--------------------------------|
-| 1 397 220 614   | 3 397 021 551       | left  | HW 1.1 - SW 1.8 | 508 2011-2014 (Type I, Fase 1) |
-| 1 397 220 613   | 3 397 021 550       | right | HW 1.1 - SW 1.8 | 508 2011-2014 (Type I, Fase 1) |
-| 1 397 220 694   | 3 397 021 927       | left  | HW 2.0 - SW 2.1 | 508 2014-2018 (Type I, Fase 2) |
-| 1 397 220 695   | 3 397 021 928       | right | HW 2.0 - SW 2.1 | 508 2014-2018 (Type I, Fase 2) |
+| Number on motor | Number on mechanism | Side  | HW/SW         | Car model / year               |
+|-----------------|---------------------|-------|---------------|--------------------------------|
+| 1 397 220 614   | 3 397 021 551       | left  | HW 1.1/SW 1.8 | 508 2011-2014 (Type I, Fase 1) |
+| 1 397 220 613   | 3 397 021 550       | right | HW 1.1/SW 1.8 | 508 2011-2014 (Type I, Fase 1) |
+| 1 397 220 694   | 3 397 021 927       | left  | HW 2.0/SW 2.1 | 508 2014-2018 (Type I, Fase 2) |
+| 1 397 220 695   | 3 397 021 928       | right | HW 2.0/SW 2.1 | 508 2014-2018 (Type I, Fase 2) |
 
 ## Other motors of the same type
 
