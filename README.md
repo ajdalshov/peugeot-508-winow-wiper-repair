@@ -303,7 +303,7 @@ Some of the Wxx SOT-23 components are identified using a simple component tester
 
 ![](assets/component_tester.jpg)
 
-# DigiKey order list for most suspected components to be replaced
+# DigiKey order list for the most likely components to be damaged
 
 This is a selection of components that are most likely to be damaged and needed to fix your corroded PCB. Most parts here are of automotive grade which usually are a bit more expensive, but they at least fall within spec of the original design. I have used all these parts myself on some of the repairs shown above and every repair has been successful and 100% working.
 
