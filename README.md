@@ -309,20 +309,20 @@ This is a selection of components that are most likely to be damaged and needed 
 
 | #  | PRODUCT DETAILS                                                                                                                                                            |
 |----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1  | [SZNUP2105LT1GOSCT-ND](https://www.digikey.no/en/products/detail/onsemi/SZNUP2105LT1G/3063422) SZNUP2105LT1G TVS DIODE 24VWM 44VC SOT233                                   |
-| 2  | [31-BAS21Q-13-FCT-ND](https://www.digikey.no/en/products/detail/diodes-incorporated/BAS21Q-13-F/16548952) BAS21Q-13-F DIODE STANDARD 250V 200MA SOT233                     |
-| 3  | [1727-2919-1-ND](https://www.digikey.no/en/products/detail/nexperia-usa-inc/BC817-40-215/763235) BC817-40,215 TRANS NPN 45V 0.5A TO-236AB                                  |
-| 4  | [1727-BAV99-QRCT-ND](https://www.digikey.no/en/products/detail/nexperia-usa-inc/BAV99-QR/15196157) BAV99-QR DIODE ARR GP 100V 215MA TO-236AB NCNR                          |
-| 5  | [846-ESR03EZPF3301CT-ND](https://www.digikey.no/en/products/detail/rohm-semiconductor/ESR03EZPF3301/4007218) ESR03EZPF3301 RES 3.3K OHM 1% 1/4W 0603                       |
-| 6  | [846-ESR03EZPF46R4CT-ND](https://www.digikey.no/en/products/detail/rohm-semiconductor/ESR03EZPF46R4/21731249) ESR03EZPF46R4 RES 46.4 OHM 1% 1/4W 0603                      |
-| 7  | [541-RCS060338K3FKEACT-ND](https://www.digikey.no/en/products/detail/vishay-dale/RCS060338K3FKEA/5868654) RCS060338K3FKEA RES SMD 38.3K OHM 1% 1/4W 0603                   |
-| 8  | [P2.87KBCCT-ND](https://www.digikey.no/en/products/detail/panasonic-electronic-components/ERA-8AEB2871V/3070938) ERA-8AEB2871V RES SMD 2.87K OHM 0.1% 1/4W 1206            |
-| 9  | [490-GCM1885G2A101FA16DCT-ND](https://www.digikey.no/en/products/detail/murata-electronics/GCM1885G2A101FA16D/13401802) GCM1885G2A101FA16D CAP CER 100PF 100V X8G 0603     |
-| 10 | [490-16409-1-ND](https://www.digikey.no/en/products/detail/murata-electronics/GCM1885C2A330FA16D/7363153) GCM1885C2A330FA16D CAP CER 33PF 100V C0G/NP0 0603                |
-| 11 | [490-GCM1885C2A471FA16DCT-ND](https://www.digikey.no/en/products/detail/murata-electronics/GCM1885C2A471FA16D/11618802) GCM1885C2A471FA16D CAP CER 470PF 100V C0G/NP0 0603 |
-| 12 | [399-C0603C473J1RECAUTOCT-ND](https://www.digikey.no/en/products/detail/kemet/C0603C473J1RECAUTO/6825898) C0603C473J1RECAUTO CAP CER 0.047UF 100V X7R 0603                 |
-| 13 | [399-C0805C512F4HACAUTOCT-ND](https://www.digikey.no/en/products/detail/kemet/C0805C512F4HACAUTO/7958369) C0805C512F4HACAUTO CAP CER 0805 5.1NF 16V ULTRA STA              |
-| 14 | [445-MPZ1608D300BTD25CT-ND](https://www.digikey.no/en/products/detail/tdk-corporation/MPZ1608D300BTD25/5040309) MPZ1608D300BTD25 FERRITE BEAD 30 OHM 0603 1LN              |
+| 1  | [SZNUP2105LT1GOSCT-ND](https://www.digikey.com/en/products/detail/onsemi/SZNUP2105LT1G/3063422) SZNUP2105LT1G TVS DIODE 24VWM 44VC SOT233                                   |
+| 2  | [31-BAS21Q-13-FCT-ND](https://www.digikey.com/en/products/detail/diodes-incorporated/BAS21Q-13-F/16548952) BAS21Q-13-F DIODE STANDARD 250V 200MA SOT233                     |
+| 3  | [1727-2919-1-ND](https://www.digikey.com/en/products/detail/nexperia-usa-inc/BC817-40-215/763235) BC817-40,215 TRANS NPN 45V 0.5A TO-236AB                                  |
+| 4  | [1727-BAV99-QRCT-ND](https://www.digikey.com/en/products/detail/nexperia-usa-inc/BAV99-QR/15196157) BAV99-QR DIODE ARR GP 100V 215MA TO-236AB NCNR                          |
+| 5  | [846-ESR03EZPF3301CT-ND](https://www.digikey.com/en/products/detail/rohm-semiconductor/ESR03EZPF3301/4007218) ESR03EZPF3301 RES 3.3K OHM 1% 1/4W 0603                       |
+| 6  | [846-ESR03EZPF46R4CT-ND](https://www.digikey.com/en/products/detail/rohm-semiconductor/ESR03EZPF46R4/21731249) ESR03EZPF46R4 RES 46.4 OHM 1% 1/4W 0603                      |
+| 7  | [541-RCS060338K3FKEACT-ND](https://www.digikey.com/en/products/detail/vishay-dale/RCS060338K3FKEA/5868654) RCS060338K3FKEA RES SMD 38.3K OHM 1% 1/4W 0603                   |
+| 8  | [P2.87KBCCT-ND](https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERA-8AEB2871V/3070938) ERA-8AEB2871V RES SMD 2.87K OHM 0.1% 1/4W 1206            |
+| 9  | [490-GCM1885G2A101FA16DCT-ND](https://www.digikey.com/en/products/detail/murata-electronics/GCM1885G2A101FA16D/13401802) GCM1885G2A101FA16D CAP CER 100PF 100V X8G 0603     |
+| 10 | [490-16409-1-ND](https://www.digikey.com/en/products/detail/murata-electronics/GCM1885C2A330FA16D/7363153) GCM1885C2A330FA16D CAP CER 33PF 100V C0G/NP0 0603                |
+| 11 | [490-GCM1885C2A471FA16DCT-ND](https://www.digikey.com/en/products/detail/murata-electronics/GCM1885C2A471FA16D/11618802) GCM1885C2A471FA16D CAP CER 470PF 100V C0G/NP0 0603 |
+| 12 | [399-C0603C473J1RECAUTOCT-ND](https://www.digikey.com/en/products/detail/kemet/C0603C473J1RECAUTO/6825898) C0603C473J1RECAUTO CAP CER 0.047UF 100V X7R 0603                 |
+| 13 | [399-C0805C512F4HACAUTOCT-ND](https://www.digikey.com/en/products/detail/kemet/C0805C512F4HACAUTO/7958369) C0805C512F4HACAUTO CAP CER 0805 5.1NF 16V ULTRA STA              |
+| 14 | [445-MPZ1608D300BTD25CT-ND](https://www.digikey.com/en/products/detail/tdk-corporation/MPZ1608D300BTD25/5040309) MPZ1608D300BTD25 FERRITE BEAD 30 OHM 0603 1LN              |
 
 # Below is a list of wiper motors and their part codes
 
