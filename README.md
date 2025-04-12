@@ -5,9 +5,9 @@
 
 ## What's the fuzz all about?
 
-If you read this you might have experienced on a rainy day out driving that your front left window wiper all of a sudden just wipes half of your windshield and the right window wiper seems dead. You drive to your local mechanic and get told they will have to replace both window wipers. It will cost you quite a bit more than you are comforable paying for to fix something seemingly simple as a defective window wiper motor (£2000 or similar). You might get the idea to find a used wiper motor from a scrapped car which is when you will get the next shock. The price for a dirty old used window wiper motor for this specific car model is more than the price of a new wiper motor for any other car. The reason for this is that it's a highly common problem that these fail on the Peugeot 508 and used parts are short in supply. It's simply a design flaw by Peugeot and boils down to the lack of protection above the wiper motor which make the motor openly exposed to **rain** (go figure). Especially the left wiper motor which seems to **almost always** be the culprit. A side effect of this can also be other errors showing up like airbag and passenger seat detection, this is because the indicator lamps for these functions are connected to the same communication line (LIN bus) as the wipers, and when this line is shorted that will be the result. But don't worry, these errors will also disappear once the wiper motor is fixed.
+If you read this you might have experienced on a rainy day out driving that your front left window wiper all of a sudden just wipes half of your windshield and the right window wiper seems dead. You drive to your local mechanic and get told they will have to replace both window wipers. It will cost you quite a bit more than you are comfortable paying for to fix something seemingly simple as a defective window wiper motor (£2000 or similar). You might get the idea to find a used wiper motor from a scrapped car which is when you will get the next shock. The price for a dirty old used window wiper motor for this specific car model is more than the price of a new wiper motor for any other car. The reason for this is that it's a highly common problem that these fail on the Peugeot 508 and used parts are short in supply. It's simply a design flaw by Peugeot and boils down to the lack of protection above the wiper motor which make the motor openly exposed to **rain** (go figure). Especially the left wiper motor which seems to **almost always** be the culprit. A side effect of this can also be other errors showing up like airbag and passenger seat detection, this is because the indicator lamps for these functions are connected to the same communication line (LIN bus) as the wipers, and when this line is shorted that will be the result. But don't worry, these errors will also disappear once the wiper motor is fixed.
 
-Over time the aluminum block part of the Bosch WDA motor corrodes and pushes the plastic cover away from the aluminum block, breaching the rubber gasket between the two parts and water gets into the motor, quickly corroding elecronics when they are powered. Also, from my experience, it seems the rubber seal around the axle of the motor itself dries/rots over time and water will also find its way through there.
+Over time the aluminum block part of the Bosch WDA motor corrodes and pushes the plastic cover away from the aluminum block, breaching the rubber gasket between the two parts and water gets into the motor, quickly corroding electronics when they are powered. Also, from my experience, it seems the rubber seal around the axle of the motor itself dries/rots over time and water will also find its way through there.
 
 The reason for why your local dealer/workshop says you need to replace both wiper motors is that the parts they sell are always a newer version (different MCU and firmware and the old version is discontinued). Since these two wiper motors need to communicate with each other and there are slight differences in the communication protocol, the old wiper motors are incompatible with the new versions. Hence both needs replacement to the new version, unless you fix it yourself.
 
@@ -27,7 +27,7 @@ If you buy a dirty old second hand wiper motor, it's likely that it has already 
 
 	---
 
-- Remove the clamps using a flat screwdriver and carefuly separate the plastic housing from the motor housing ([YouTube video made by someone else to get an idea on how to do this right](https://www.youtube.com/watch?v=EBXXZTmN6M8)), it's usually corroded and can be a bit stuck, be patient and careful.
+- Remove the clamps using a flat screwdriver and carefully separate the plastic housing from the motor housing ([YouTube video made by someone else to get an idea on how to do this right](https://www.youtube.com/watch?v=EBXXZTmN6M8)), it's usually corroded and can be a bit stuck, be patient and careful.
 
 	![](assets/1_397_220_614_case_disassembly.jpg)
 
@@ -81,7 +81,7 @@ If you buy a dirty old second hand wiper motor, it's likely that it has already 
 
 	---
 
-- Second example, microscope view of BOSCH D0865FD microcontroller after cleanup, on this one I had to drill using a small diamond ball tip to expose the track for a broken pin under the chip's proteive epoxy resin in order to get a clean point to solder a new wire to.
+- Second example, microscope view of BOSCH D0865FD microcontroller after cleanup, on this one I had to drill using a small diamond ball tip to expose the track for a broken pin under the chip's protective epoxy resin in order to get a clean point to solder a new wire to.
 
 	![](assets/1_397_220_614_pcb_lqdmg_1_chip_drill.jpg)
 
@@ -136,7 +136,7 @@ If you buy a dirty old second hand wiper motor, it's likely that it has already 
 
 	---
 
-- Sometimes the pins connecting the plastic case connector to the PCB will also be severly corroded and might need some fixup. Here I have removed plastic around the pin and cleant the area in order to get a good and clean soldering point to repair the pin.
+- Sometimes the pins connecting the plastic case connector to the PCB will also be severely corroded and might need some fix-up. Here I have removed plastic around the pin and cleaned the area in order to get a good and clean soldering point to repair the pin.
 
 	![](assets/1_397_220_614_case_pin_fix_1.jpg)
 
@@ -160,7 +160,7 @@ If you buy a dirty old second hand wiper motor, it's likely that it has already 
 
 	---
 
-- You may use the motor housing from Bosch WDA wipers used in other car models/brands, se a more detailed list futher below. In this example I used motor housing from a Skoda Octavia (much cheaper to get). Keep in mind this applies only to the motor housing and brush assembly, not the PCB and plastic casing.
+- You may use the motor housing from Bosch WDA wipers used in other car models/brands, se a more detailed list further below. In this example I used motor housing from a Skoda Octavia (much cheaper to get). Keep in mind this applies only to the motor housing and brush assembly, not the PCB and plastic casing.
 
 	![](assets/Peugeot_508_Skoda_side-by-side.jpg)
 	![](assets/Peugeot_508_Skoda_side-by-side2.jpg)
@@ -182,7 +182,7 @@ If you buy a dirty old second hand wiper motor, it's likely that it has already 
 
 Below is a list of relevant components on the 1 397 220 613 / 1 397 220 614 Bosch WDA motor PCB that are critical for its function and that is most likely to be damaged when water leaks into the motor assembly. Components on the LIN Bus lines are most likely to suffer first due to how the motor is mounted to the car chassis (slightly tilted, making all the water collect in one place once water leaks to the inside).
 
-First listed are two ICs, pins on the main MCU (D0865FD) is suspectible to some corrosion damage if the leakage has been severe. Alternatives to the components are listed under each component.
+First listed are two ICs, pins on the main MCU (D0865FD) is susceptible to some corrosion damage if the leakage has been severe. Alternatives to the components are listed under each component.
 
 D0865FD - BOSCH microcontroller for WDA motion control, LIN Bus communication (pin 5, 40, 41, 42, 44 are LIN Bus related) `[TQFP44]`
 - no datasheet available to the public
@@ -235,7 +235,7 @@ WYA - NPN general-purpose transistor (45 V, 500 mA) `[SOT-23]`
 
 | Marking | Type + Link to datasheet                        | Grade      | Comment                                                                                                      |
 |---------|-------------------------------------------------|------------|--------------------------------------------------------------------------------------------------------------|
-| 6C*     | [BC817-40-Q](assets/datasheets/BC817-Q_SER.pdf) | automotive | 6Cs̱ (lowercase s with underline, Siemens?) is used as a replacement for WYA on another PCB of the same type  |
+| 6C*     | [BC817-40-Q](assets/datasheets/BC817-Q_SER.pdf) | automotive | 6Cs̱ (lowercase s with underline, Siemens?) is used as a replacement for WYA on another PCB of the same type |
 |         | [BC817-40](assets/datasheets/BC817_SER.pdf)     |            |                                                                                                              |
 
 Below are some other components in same era that have similar markings, not used for the Bosch WDA but on other automotive related PCBs (this might be useful for someone as the Wxx components are almost impossible to find).
@@ -286,7 +286,7 @@ Note that NXP manufacturing site code can be either prefix or suffix.
 
 Example: A7W and W5C
 
-Any numbers written behind this 3 characted code is production year/month.
+Any numbers written behind this 3-character code is production year/month.
 ```
 
 ```
@@ -296,12 +296,33 @@ Product Type Marking Code: K**
 
 Example: KJE
 
-Any numbers written behind this 3 characted code is production year/month.
+Any numbers written behind this 3-character code is production year/month.
 ```
 
 Some of the Wxx SOT-23 components are identified using a simple component tester, cross referencing the values and using educated guesswork to find equivalent components.
 
 ![](assets/component_tester.jpg)
+
+# DigiKey order list for most suspected components to be replaced
+
+This is a selection of components that are most likely to be damaged and needed to fix your corroded PCB. Most parts here are of automotive grade which usually are a bit more expensive, but they at least fall within spec of the original design. I have used all these parts myself on some of the repairs shown above and every repair has been successful and 100% working.
+
+| #  | PRODUCT DETAILS                                                                                                                                                            |
+|----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1  | [SZNUP2105LT1GOSCT-ND](https://www.digikey.no/en/products/detail/onsemi/SZNUP2105LT1G/3063422) SZNUP2105LT1G TVS DIODE 24VWM 44VC SOT233                                   |
+| 2  | [31-BAS21Q-13-FCT-ND](https://www.digikey.no/en/products/detail/diodes-incorporated/BAS21Q-13-F/16548952) BAS21Q-13-F DIODE STANDARD 250V 200MA SOT233                     |
+| 3  | [1727-2919-1-ND](https://www.digikey.no/en/products/detail/nexperia-usa-inc/BC817-40-215/763235) BC817-40,215 TRANS NPN 45V 0.5A TO-236AB                                  |
+| 4  | [1727-BAV99-QRCT-ND](https://www.digikey.no/en/products/detail/nexperia-usa-inc/BAV99-QR/15196157) BAV99-QR DIODE ARR GP 100V 215MA TO-236AB NCNR                          |
+| 5  | [846-ESR03EZPF3301CT-ND](https://www.digikey.no/en/products/detail/rohm-semiconductor/ESR03EZPF3301/4007218) ESR03EZPF3301 RES 3.3K OHM 1% 1/4W 0603                       |
+| 6  | [846-ESR03EZPF46R4CT-ND](https://www.digikey.no/en/products/detail/rohm-semiconductor/ESR03EZPF46R4/21731249) ESR03EZPF46R4 RES 46.4 OHM 1% 1/4W 0603                      |
+| 7  | [541-RCS060338K3FKEACT-ND](https://www.digikey.no/en/products/detail/vishay-dale/RCS060338K3FKEA/5868654) RCS060338K3FKEA RES SMD 38.3K OHM 1% 1/4W 0603                   |
+| 8  | [P2.87KBCCT-ND](https://www.digikey.no/en/products/detail/panasonic-electronic-components/ERA-8AEB2871V/3070938) ERA-8AEB2871V RES SMD 2.87K OHM 0.1% 1/4W 1206            |
+| 9  | [490-GCM1885G2A101FA16DCT-ND](https://www.digikey.no/en/products/detail/murata-electronics/GCM1885G2A101FA16D/13401802) GCM1885G2A101FA16D CAP CER 100PF 100V X8G 0603     |
+| 10 | [490-16409-1-ND](https://www.digikey.no/en/products/detail/murata-electronics/GCM1885C2A330FA16D/7363153) GCM1885C2A330FA16D CAP CER 33PF 100V C0G/NP0 0603                |
+| 11 | [490-GCM1885C2A471FA16DCT-ND](https://www.digikey.no/en/products/detail/murata-electronics/GCM1885C2A471FA16D/11618802) GCM1885C2A471FA16D CAP CER 470PF 100V C0G/NP0 0603 |
+| 12 | [399-C0603C473J1RECAUTOCT-ND](https://www.digikey.no/en/products/detail/kemet/C0603C473J1RECAUTO/6825898) C0603C473J1RECAUTO CAP CER 0.047UF 100V X7R 0603                 |
+| 13 | [399-C0805C512F4HACAUTOCT-ND](https://www.digikey.no/en/products/detail/kemet/C0805C512F4HACAUTO/7958369) C0805C512F4HACAUTO CAP CER 0805 5.1NF 16V ULTRA STA              |
+| 14 | [445-MPZ1608D300BTD25CT-ND](https://www.digikey.no/en/products/detail/tdk-corporation/MPZ1608D300BTD25/5040309) MPZ1608D300BTD25 FERRITE BEAD 30 OHM 0603 1LN              |
 
 # Below is a list of wiper motors and their part codes
 
@@ -330,7 +351,7 @@ The wiper motor for Peugeot 508 comes in two versions, number on motor is found 
 
 ## Other motors of the same type
 
-The common product number is 1 397 220 xxx and there are MANY of these motors. Most of them are used in single motor systems with mechanichs linking the two wipers. These are calibrated with a completely different range of motion than what is used for dual motor systems. Dual motor systems work as a master/slave setup and need to be synchronized in order to prevent wiper overlap (wipers crashing in to each other). Older motor units with part number from about 1 397 220 5xx to 1 397 220 68x uses the BOSCH D0865FD MCU while newer motor units with part number from about 1 397 220 69x to 1 397 220 7xx uses the [Infinion TLE9868QXB20](https://www.infineon.com/cms/de/product/microcontroller/embedded-power-ics-system-on-chip-/h-bridge-driver-integrated-arm-cortex-m3/tle9868qxb20/) MCU ([datasheet](assets/datasheets/Infineon-TLE9868QXB20-DataSheet-v02_00-EN.pdf)).
+The common product number is 1 397 220 xxx and there are MANY of these motors. Most of them are used in single motor systems with mechanics linking the two wipers. These are calibrated with a completely different range of motion than what is used for dual motor systems. Dual motor systems work as a master/slave setup and need to be synchronized in order to prevent wiper overlap (wipers crashing in to each other). Older motor units with part number from about 1 397 220 5xx to 1 397 220 68x uses the BOSCH D0865FD MCU while newer motor units with part number from about 1 397 220 69x to 1 397 220 7xx uses the [Infinion TLE9868QXB20](https://www.infineon.com/cms/de/product/microcontroller/embedded-power-ics-system-on-chip-/h-bridge-driver-integrated-arm-cortex-m3/tle9868qxb20/) MCU ([datasheet](assets/datasheets/Infineon-TLE9868QXB20-DataSheet-v02_00-EN.pdf)).
 
 This list may be useful in case you need a new motor housing or brush assembly, these may work as replacements (but NOT the PCB and probably not the plastic housing as the connectors tend to differ).
 
