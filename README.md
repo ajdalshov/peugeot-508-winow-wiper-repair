@@ -11,7 +11,11 @@ Over time the aluminum block part of the Bosch WDA motor corrodes and pushes the
 
 The reason for why your local dealer/workshop says you need to replace both wiper motors is that the parts they sell are always a newer version (different MCU and firmware and the old version is discontinued). Since these two wiper motors need to communicate with each other and there are slight differences in the communication protocol, the old wiper motors are incompatible with the new versions. Hence both needs replacement to the new version, unless you fix it yourself.
 
-If you buy a dirty old second hand wiper motor, it's likely that it has already started to corrode and the problem might surface yet again in the near future. You may consider to open it up and clean the edges for corrosion and clean/refresh/replace the rubber gasket. The most difficult part of the disassembly is to get the plastic cover separated from the motor housing, do not use force and be really careful when removing the electrical motor brush assembly, this is connected to the circuit board and you will break the wires connecting the brush assembly to the circuit board if you're not careful enough. 
+> [!WARNING]
+> If you buy a dirty old second hand wiper motor, it's likely that it has already started to corrode and the problem might surface yet again in the near future. You may consider to open it up and clean the edges for corrosion and clean/refresh/replace the rubber gasket. The most difficult part of the disassembly is to get the plastic cover separated from the motor housing, do not use force and be really careful when removing the electrical motor brush assembly, this is connected to the circuit board and you will break the wires connecting the brush assembly to the circuit board if you're not careful enough. 
+
+> [!TIP]
+> After repair and re-mounted to car, I recommend putting some sort of plastic cover over the whole wiper assembly in order to prevent future water damage (this can happen over and over again, it can be a bit hard to get them 100% sealed after repair). You can use something like a plastic A4 document folder, make a hole in the plastic folder, then on the wiper mechanism, remove the rubber that sits on the axle that you attach the wiper blade to, thread the plastic document folder over it and put the rubber back on. Make sure the plastic folder is put on so that and all sides face downwards from where the axle/rubber is, just like an umbrella. Now it will stay dry and probably last until the car is scrapped.
 
 <div class="grid cards" markdown>
 
