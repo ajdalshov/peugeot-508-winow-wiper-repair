@@ -307,7 +307,7 @@ Some of the Wxx SOT-23 components are identified using a simple component tester
 
 ![](assets/component_tester.jpg)
 
-# DigiKey order list for the most likely components to be damaged
+## DigiKey component order list
 
 This is a selection of components that are most likely to be damaged and needed to fix your corroded PCB. Most parts here are of automotive grade which usually are a bit more expensive, but they at least fall within spec of the original design. I have used all these parts myself on some of the repairs shown above and every repair has been successful and 100% working.
 
@@ -332,21 +332,21 @@ This is a selection of components that are most likely to be damaged and needed 
 > [!NOTE]
 > Item #13 (399-C0805C512F4HACAUTOCT-ND) is size 0805 but the right size should be 0603 ([C0603C512F4HACAUTO](https://www.digikey.com/en/products/detail/kemet/c0603c512f4hacauto/7956614)), but it's usually not in stock for immediate delivery.
 
-# Below is a list of wiper motors and their part codes
+## List of wiper motors and part codes
 
-## Peugeot 508 2011 - 2014
+### Peugeot 508 2011 - 2014
 
-	1 397 220 614 - driver side (left)		[9677472580] [9816172780]
-	1 397 220 613 - passenger side (right)	[9677472680] [9816172680]
+	1 397 220 614 - driver side (left)      [9677472580] [9816172780]
+	1 397 220 613 - passenger side (right)  [9677472680] [9816172680]
 
-## Peugeot 508 2014<
+### Peugeot 508 2014<
 
 	1 397 220 694 - driver side (left)
 	1 397 220 695 - passenger side (right)
 
 > These may need calibration in Diagbox / Peugeot Planet if fitted in a Peugeot 508 < 2014
 
-## Hardware / firmware info
+### Hardware / firmware info
 
 The wiper motor for Peugeot 508 comes in two versions, number on motor is found on the black plastic cover on the electrical motor itself, number on mechanism is found on a white label next to one of the mounting screws. You can replace the motor with another motor with the same part number without doing anything else (no "sync" or use of diagnostic software needed). You can **not** directly replace just one motor of the old type with a motor of the new type since they are incompatible, both motors must have the same HW/SW.
 
@@ -357,51 +357,51 @@ The wiper motor for Peugeot 508 comes in two versions, number on motor is found 
 | 1 397 220 694   | 3 397 021 927       | left  | HW 2.0/SW 2.1 | 508 2014-2018 (Type I, Fase 2) |
 | 1 397 220 695   | 3 397 021 928       | right | HW 2.0/SW 2.1 | 508 2014-2018 (Type I, Fase 2) |
 
-## Other motors of the same type
+### Other motors of the same type
 
 The common product number is 1 397 220 xxx and there are MANY of these motors. Most of them are used in single motor systems with mechanics linking the two wipers. These are calibrated with a completely different range of motion than what is used for dual motor systems. Dual motor systems work as a master/slave setup and need to be synchronized in order to prevent wiper overlap (wipers crashing in to each other). Older motor units with part number from about 1 397 220 5xx to 1 397 220 68x uses the BOSCH D0865FD MCU while newer motor units with part number from about 1 397 220 69x to 1 397 220 7xx uses the [Infinion TLE9868QXB20](https://www.infineon.com/cms/de/product/microcontroller/embedded-power-ics-system-on-chip-/h-bridge-driver-integrated-arm-cortex-m3/tle9868qxb20/) MCU ([datasheet](assets/datasheets/Infineon-TLE9868QXB20-DataSheet-v02_00-EN.pdf)).
 
 This list may be useful in case you need a new motor housing or brush assembly, these may work as replacements (but NOT the PCB and probably not the plastic housing as the connectors tend to differ).
 
-### Peugeot 3008, 2009-2016 (Type I)
+#### Peugeot 3008, 2009-2016 (Type I)
 
 	1 397 220 576 - driver side (left)
 	1 397 220 577 - passenger side (right)
 
-### Peugeot 5008, 2010-2017 (Type I)
+#### Peugeot 5008, 2010-2017 (Type I)
 
 	1 397 220 576 - driver side (left)
 	1 397 220 577 - passenger side (right)
 
-### Skoda Octavia 2017-2020 (Type III, Fase 2)
+#### Skoda Octavia 2017-2020 (Type III, Fase 2)
 
 	1 397 220 712 - motor housing and brushes might fit Peugeot 508 Left
 
-### Audi Q3, 2011-2014 (Type I, Phase 1)
+#### Audi Q3, 2011-2014 (Type I, Phase 1)
 
 	1 397 220 615 - motor housing and brushes might fit Peugeot 508 Left
 
 One motor system with mechanics driving two wipers
 
-### Volvo V40, 2012-2019
+#### Volvo V40, 2012-2019
 
 	1 397 220 628 - motor housing and brushes might fit Peugeot 508 Left
 
 One motor system with mechanics driving two wipers
 
-### VW Golf VII, 2012-2017 (Phase 1)
+#### VW Golf VII, 2012-2017 (Phase 1)
 
 	1 397 220 663 - motor housing and brushes might fit Peugeot 508 Left
 
 One motor system with mechanics driving two wipers
 
-### Mercedes C class, 2014< (W205)
+#### Mercedes C class, 2014< (W205)
 
 	1 397 220 696 - motor housing and brushes might fit Peugeot 508 Right
 
 One motor system with mechanics driving two wipers
 
-### AUDI Q7 2015< (4LB)
+#### AUDI Q7 2015< (4LB)
 
 	1 397 220 697 - motor housing and brushes might fit Peugeot 508 Right
 
