@@ -184,7 +184,7 @@ The reason for why your local dealer/workshop says you need to replace both wipe
 
 ## Component identification
 
-Below is a list of relevant components on the 1 397 220 613 / 1 397 220 614 Bosch WDA motor PCB that are critical for its function and that is most likely to be damaged when water leaks into the motor assembly. Components on the LIN Bus lines are most likely to suffer first due to how the motor is mounted to the car chassis (slightly tilted, making all the water collect in one place once water leaks to the inside).
+Below is a list of relevant components on the 1 397 220 613 / 1 397 220 614 Bosch WDA motor PCB that are critical for its function and that is most likely to be damaged when water leaks into the motor assembly. Components on the LIN Bus lines are most likely to suffer first due to how the motor is mounted to the car chassis (slightly tilted, making all the water collect in one place once water leaks to the inside). The large 680uF/35V capacitor is also susceptible to corrotion on its legs and may need replacement in some cases.
 
 First listed are two ICs, pins on the main MCU (D0865FD) is susceptible to some corrosion damage if the leakage has been severe. Alternatives to the components are listed under each component.
 
@@ -327,6 +327,10 @@ This is a selection of components that are most likely to be damaged and needed 
 | 12 | [399-C0603C473J1RECAUTOCT-ND](https://www.digikey.com/en/products/detail/kemet/C0603C473J1RECAUTO/6825898) C0603C473J1RECAUTO CAP CER 0.047UF 100V X7R 0603                 |
 | 13 | [399-C0805C512F4HACAUTOCT-ND](https://www.digikey.com/en/products/detail/kemet/C0805C512F4HACAUTO/7958369) C0805C512F4HACAUTO CAP CER 0805 5.1NF 16V ULTRA STA              |
 | 14 | [445-MPZ1608D300BTD25CT-ND](https://www.digikey.com/en/products/detail/tdk-corporation/MPZ1608D300BTD25/5040309) MPZ1608D300BTD25 FERRITE BEAD 30 OHM 0603 1LN              |
+| 15 | [P11240-ND](https://www.digikey.com/en/products/detail/panasonic-electronic-components/EEU-FC1V681L/350070) EEU-FC1V681L CAP ALUM 680UF 20% 35V RADIAL TH                   |
+
+> [!NOTE]
+> Item #13 (399-C0805C512F4HACAUTOCT-ND) is size 0805 but the right size should be 0603 ([C0603C512F4HACAUTO](https://www.digikey.com/en/products/detail/kemet/c0603c512f4hacauto/7956614)), but it's usually not in stock for immediate delivery.
 
 # Below is a list of wiper motors and their part codes
 
